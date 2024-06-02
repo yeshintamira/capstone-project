@@ -43,12 +43,15 @@ html, body {
     font-size: 16px;
 }
 
-.nav .logo {
-    flex-grow: 1;
-    font-size: 20px; 
-    font-weight: bold;
-}
-
+.logo {
+    width: 70px; /* Adjust the size as needed */
+    height: 70px; /* Adjust the size as needed */
+    background-image: url('../public/images/logo-budra.png'); /* Adjust the path as needed */
+    background-size: contain; /* Ensure the logo is fully visible */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center; /* Center the logo */
+  }
+  
 .navbar-menu {
     list-style: none;
     margin: 0;
@@ -190,6 +193,22 @@ main {
     margin: 0.5rem 0;
     color: #555;
 }
+
+
+.detail-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color:#218284;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .detail-link:hover {
+    background-color: #218284;
+  }
 /* Gaya untuk footer */
 footer {
     background-color: #218284;

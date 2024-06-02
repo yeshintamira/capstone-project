@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <img src="${item.pictureId}" alt="${item.name}">
         <div class="card-content">
           <h2>${item.name}</h2>
+          <a href="#" class="detail-link">Lihat Detail</a>
         </div>
       `;
 
