@@ -17,7 +17,7 @@
   }
     {
       "name": "Tanean Lanjhang",
-      "description": "Tanean Lanjhang adalah konsep permukiman tradisional Madura yang berarti "halaman panjang". Rumah-rumah dalam satu keluarga besar dibangun berderet dengan halaman panjang di tengahnya yang digunakan untuk berbagai aktivitas bersama, seperti bercocok tanam dan acara keluarga. Tanean Lanjhang mencerminkan kekerabatan yang erat dan gotong royong dalam masyarakat Madura.",
+      "description": "Tanean Lanjhang adalah konsep permukiman tradisional Madura yang berarti 'halaman panjang'. Rumah-rumah dalam satu keluarga besar dibangun berderet dengan halaman panjang di tengahnya yang digunakan untuk berbagai aktivitas bersama, seperti bercocok tanam dan acara keluarga. Tanean Lanjhang mencerminkan kekerabatan yang erat dan gotong royong dalam masyarakat Madura.",
       "pictureId": ".."
   }
     {
@@ -38,6 +38,16 @@
      {
       "name": "Tari Gambu",
       "description": "Tari Gambu adalah tarian tradisional Madura yang sering ditampilkan dalam berbagai acara adat dan budaya. Tarian ini biasanya diiringi oleh musik Saronen dan dimainkan oleh beberapa penari dengan gerakan yang dinamis dan penuh semangat.",
+      "pictureId": ".."
+  }
+      {
+      "name": "Tradisi Sandur",
+      "description": "Tradisi Sandur adalah seni pertunjukan rakyat yang menggabungkan unsur drama, tari, dan musik. Dalam pertunjukan Sandur, pemain biasanya menampilkan cerita-cerita rakyat, legenda, atau kisah kehidupan sehari-hari yang sarat dengan nilai-nilai moral dan budaya.",
+      "pictureId": ".."
+  }
+      {
+      "name": "Kuliner Khas Madura",
+      "description": "Selain tradisi dan upacara, kuliner khas Madura juga merupakan bagian penting dari budaya mereka. Beberapa makanan khas Madura yang terkenal antara lain Sate Madura, Soto Madura, Bebek Sinjay, dan Tajin Sobih. Kuliner ini tidak hanya lezat tetapi juga mencerminkan kekayaan budaya kuliner Madura.",
       "pictureId": ".."
   }
  ]
