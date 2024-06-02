@@ -16,9 +16,29 @@
       "pictureId": ".."
   }
     {
-      "name": "Tari Muang Sangkal",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
-      "pictureId": "../images/muang sangkal.jpg"
+      "name": "Tanean Lanjhang",
+      "description": "Tanean Lanjhang adalah konsep permukiman tradisional Madura yang berarti "halaman panjang". Rumah-rumah dalam satu keluarga besar dibangun berderet dengan halaman panjang di tengahnya yang digunakan untuk berbagai aktivitas bersama, seperti bercocok tanam dan acara keluarga. Tanean Lanjhang mencerminkan kekerabatan yang erat dan gotong royong dalam masyarakat Madura.",
+      "pictureId": ".."
+  }
+    {
+      "name": "Rokat Tase'",
+      "description": "Rokat Tase' adalah upacara adat yang dilakukan oleh masyarakat pesisir Madura untuk memohon keselamatan dan keberkahan dalam mencari nafkah di laut. Upacara ini biasanya diadakan di pantai dengan berbagai ritual, termasuk penyembelihan hewan dan pelepasan sesaji ke laut. Rokat Tase' menunjukkan hubungan erat masyarakat Madura dengan laut sebagai sumber penghidupan.",
+      "pictureId": ".."
+  }
+     {
+      "name": "Topeng Dalang Madura",
+      "description": "Topeng Dalang adalah seni pertunjukan wayang topeng yang menggambarkan berbagai cerita rakyat dan legenda Madura. Dalam pertunjukan ini, dalang (pemain) mengenakan topeng dan memainkan karakter-karakter yang berbeda. Topeng Dalang tidak hanya menghibur, tetapi juga mengandung pesan moral dan filosofi kehidupan.",
+      "pictureId": ".."
+  }
+     {
+      "name": "Saronen",
+      "description": "Saronen adalah musik tradisional Madura yang menggunakan alat musik tiup, serupa dengan seruling, namun memiliki bunyi yang khas. Musik ini biasanya dimainkan dalam acara-acara adat, pernikahan, dan festival budaya. Saronen mencerminkan keceriaan dan semangat masyarakat Madura.",
+      "pictureId": ".."
+  }
+     {
+      "name": "Tari Gambu",
+      "description": "Tari Gambu adalah tarian tradisional Madura yang sering ditampilkan dalam berbagai acara adat dan budaya. Tarian ini biasanya diiringi oleh musik Saronen dan dimainkan oleh beberapa penari dengan gerakan yang dinamis dan penuh semangat.",
+      "pictureId": ".."
   }
  ]
 }
