@@ -1,0 +1,200 @@
+/* Reset box-sizing untuk semua elemen */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Setel dasar HTML dan body */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gaya untuk skip-link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px 16px;
+    z-index: 100;
+    transition: top 0.3s;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Gaya untuk navigasi */
+.nav {
+    background-color: #218284;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px; 
+    font-size: 16px;
+}
+
+.nav .logo {
+    flex-grow: 1;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    padding: 0 10px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; 
+}
+
+.navbar-menu a:hover {
+    color: #c7c7c7;
+}
+
+/* Gaya untuk menu icon */
+#menuIcon {
+    display: none; 
+    background-color: transparent; 
+    border: none;  
+    color: white;  
+    font-size: 24px;  
+    cursor: pointer;  
+    padding: 10px;  
+}
+
+button, .navbar-menu a, input[type="text"], textarea {
+    min-width: 44px;  
+    min-height: 44px;
+    padding: 10px;    
+    font-size: 16px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuIcon {
+    width: 44px;
+    height: 44px;
+}
+
+/* Gaya untuk hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-image: url('../public/images/heros/hero-image_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heroInner {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.heroTitle {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.heroTagline {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Gaya untuk container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.container p {
+    font-family: Lato, sans-serif;
+    font-size: 30px;
+    margin-top: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#cultural-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.cultural-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.cultural-card:hover {
+    transform: scale(1.05);
+}
+
+.cultural-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cultural-card .card-content {
+    padding: 1rem;
+}
+
+.cultural-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.cultural-card p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+/* Gaya untuk footer */
+footer {
+    background-color: #218284;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 16px;
+  }
