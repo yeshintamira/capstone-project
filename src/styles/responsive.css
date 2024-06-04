@@ -1,0 +1,65 @@
+/* Responsive Styles */
+
+/* Responsive navbar menu */
+@media only screen and (max-width: 600px) {
+    #menuIcon {
+        display: block;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #218284;
+    }
+    #drawer.open {
+        display: flex;
+    }
+    #drawer li a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Responsive styles for cultural list */
+@media only screen and (max-width: 600px) {
+    #cultural-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .cultural-card {
+        margin: 0.5rem auto;
+        max-width: 100%;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar-menu li {
+        padding: 0 10px;
+    }
+    #cultural-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .cultural-card {
+        margin: 1rem;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+    .navbar-menu li {
+        padding: 0 10px;
+    }
+    #cultural-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .cultural-card {
+        margin: 1rem;
+    }
+}
