@@ -26,12 +26,21 @@ document.addEventListener('DOMContentLoaded', async () => {
       card.className = 'cultural-card';
 
       card.innerHTML = `
-        <img src="${item.pictureId}" alt="${item.name}">
-        <div class="card-content">
-          <h2>${item.name}</h2>
-          <a href="#" class="detail-link">Lihat Detail</a>
-        </div>
-      `;
+    <img src="${item.pictureId}" alt="${item.name}">
+    <div class="card-content">
+        <h2>${item.name}</h2>
+        <a href="#" class="detail-link">Lihat Detail</a>
+    </div>
+`;
+
+      // Setelah elemen-elemen HTML telah ditambahkan ke DOM, kita dapat menambahkan event listener.
+      const detailLinks = document.querySelectorAll('.detail-link'); // Ambil semua elemen dengan kelas .detail-link
+      detailLinks.forEach((detailLink) => { // Loop melalui setiap elemen .detail-link
+        detailLink.addEventListener('click', (event) => { // Tambahkan event listener untuk setiap elemen
+          event.preventDefault(); // Cegah perilaku default dari tautan
+          window.location.href = `detail.html?id=${item.id}`; // Arahkan pengguna ke halaman detail dengan menggunakan id item
+        });
+      });
 
       culturalList.appendChild(card);
     });
