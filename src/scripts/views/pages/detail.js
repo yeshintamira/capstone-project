@@ -4,7 +4,7 @@ const Detail = {
   async render() {
     const url = window.location.hash.split('/');
     const id = url[url.length - 1];
-    const culturalItem = budaya.find(item => item.id === id);
+    const culturalItem = budaya.find((item) => item.id === id);
 
     if (!culturalItem) {
       return `
