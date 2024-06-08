@@ -164,14 +164,15 @@ button, .navbar-menu a, input[type="text"], textarea {
 
 /* Gaya untuk container */
 .container {
-    width: 100%;
+    width: 950%;
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color:z #ffffff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
     flex: 1;
+    border-radius: 10px;
 }
 
 .intro-container {
@@ -325,40 +326,64 @@ button, .navbar-menu a, input[type="text"], textarea {
 }
 
 .detail-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: 1fr; /* 1 row */
-    gap: 20px; /* Adjust the gap between grid items */
-    width: 100%;
-    height: 100%;
+   width: 90%;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: white;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.cultural-detail {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Mengatur posisi vertikal menjadi sejajar */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .cultural-detail {
     display: contents; /* This allows the items inside to align with the grid of the parent */
-}
-.cultural-detail img {
-    width: 100%;
-    height: auto;
+  }
+  .cultural-detail img {
+    width: 80%; /* Mengurangi lebar gambar menjadi 80% dari lebar parent */
+    height: 50%; /* Mengatur tinggi gambar menjadi setengah dari tinggi parent */
     grid-column: span 1;
-}
-.detail-content {
-    grid-column: span 3; /* Make the content span 3 columns */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px;
+  }
+  
+  .detail-content h3 {
+    font-size: 30px;
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto; 
+    color: #218284;
+  }
+  
+  .detail-content {
+    grid-column: span 1; /* Make the content span 1 column */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-}
-.detail-content h2 {
-    color: blue; /* Change this to any color you want */
-}
-.detail-content p {
+  }
+
+  .cultural-detail h2 {
+    font-size: 40px;
+    margin-top: 1px;
+    margin-bottom: 25px;
+    color: #218284;
+    text-align: center;
+  }
+  
+  
+  
+  .detail-content p {
     color: #000; /* Change this to any color you want */
     text-align: justify; /* This will justify the text */
-}
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto; /* Center the paragraph horizontally */
+    margin-bottom: 20px;
+  }
   
-.article-header h1 {
+  .article-header h1 {
     font-size: 40px;
     color: #218284;
     margin-bottom: 20px;

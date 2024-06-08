@@ -35,24 +35,24 @@ const Home = {
       
       <article class="article-container">
         <div class="article-header">
-        <h1 tabindex="0">Popular Articles of BUDRA </h1>
+        <h1 tabindex="0">Artikel Populer BUDRA </h1>
         </div>
 
     <div class="rekom-card">
     <div class="card-item">
         <img src="../images/gambar-budra/muang-sangkal.jpg" alt="Tari Muang Sangkal" class="article-image" tabindex="0">
         <h1 tabindex="0">Tari Muang Sangkal</h1>
-        <p tabindex="0">Tari Muang Sangkal berasal dari kata 'Muang' yang berarti 'mengusir' dan 'Sangkal' yang berarti 'kesialan'.</p>
+        <p tabindex="0">Tari Muang Sangkal adalah tarian tradisional khas Madura yang memiliki makna simbolis dan sakral, sering dipentaskan dalam upacara adat dan acara kebudayaan.</p>
     </div>
     <div class="card-item">
         <img src="../images/gambar-budra/karapansapi.jpg" alt="Karapan Sapi" class="article-image" tabindex="0">
         <h1 tabindex="0">Karapan Sapi</h1>
-        <p tabindex="0">Karapan Sapi adalah balapan sapi yang sangat populer di Madura. Setiap tahun, terutama pada bulan Agustus hingga Oktober, diadakan perlombaan ini sebagai bagian dari festival budaya lokal. </p>
+        <p tabindex="0">Karapan sapi adalah sebuah tradisi unik yang berasal dari Pulau Madura, Indonesia, yang melibatkan perlombaan antara kerbau yang ditarik oleh sekeranjang di atas tanah berlumpur. </p>
     </div>
     <div class="card-item">
         <img src="../images/gambar-budra/sapisono.jpeg" alt="Sapi Sono'" class="article-image" tabindex="0">
-        <h1 tabindex="0">Sapi Sono'</h1>
-        <p tabindex="0">Tradisi Sapi Sono' adalah kontes kecantikan sapi. Dalam acara ini, sapi-sapi dihias dengan aksesori yang indah dan dinilai berdasarkan keanggunan serta keserasian gerak.</p>
+        <h1 tabindex="0">Sapi Sonok</h1>
+        <p tabindex="0">Sapi Sonok adalah jenis sapi yang khas dari Madura, Indonesia, dikenal karena penampilan fisiknya yang menarik dan kelincahannya.</p>
     </div>
     
 </div>
