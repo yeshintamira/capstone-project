@@ -2,7 +2,7 @@ const budaya = [
   {
     id: '0',
     name: 'Tari Muang Sangkal',
-    description: "Tari Muang Sangkal berasal dari kata 'Muang' yang berarti 'mengusir' dan 'Sangkal' yang berarti 'kesialan'. Secara keseluruhan, tari ini bermakna upacara ritual untuk menolak bala atau mengusir kesialan dan mengharapkan keselamatan serta keberuntungan bagi masyarakat..",
+    description: "Tari Muang Sangkal berasal dari kata 'Muang' yang berarti 'mengusir' dan 'Sangkal' yang berarti 'kesialan'. Secara keseluruhan, tari ini bermakna upacara ritual untuk menolak bala atau mengusir kesialan dan mengharapkan keselamatan serta keberuntungan bagi masyarakat.",
     pictureId: '../images/gambar-budra/muang-sangkal.jpg',
   },
   {

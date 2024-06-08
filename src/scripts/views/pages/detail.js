@@ -8,14 +8,14 @@ const Detail = {
 
     if (!culturalItem) {
       return `
-        <main class="container" id="maincontent">
+        <main class="detail-container" id="maincontent">
           <p>Item tidak ditemukan!</p>
         </main>
       `;
     }
 
     return `
-      <main class="container" id="maincontent">
+      <main class="detail-container" id="maincontent">
         <div class="cultural-detail">
           <img src="${culturalItem.pictureId}" alt="${culturalItem.name}">
           <div class="detail-content">
