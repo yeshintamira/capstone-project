@@ -145,3 +145,25 @@
     }
 }
 
+/* Update responsif */
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .team-group {
+        grid-template-columns: repeat(1, 1fr); /* Ubah menjadi satu kolom untuk layar kecil */
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .team-group {
+        grid-template-columns: repeat(2, 1fr); /* Ubah menjadi dua kolom untuk layar menengah */
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+    .team-group {
+        grid-template-columns: repeat(3, 1fr); /* Tetap tiga kolom untuk layar besar */
+    }
+}
+
