@@ -110,11 +110,14 @@ button, .navbar-menu a, input[type="text"], textarea {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .heroInner {
     margin: 0 auto;
     max-width: 960px;
+    padding: 20px;
 }
 
 .heroTitle {
@@ -139,7 +142,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     margin-bottom: 10px;
     text-align: center;
     margin-top: 10px;
-    grid-column: 1 / 3; /* Membuat judul menempati seluruh lebar grid */
+    grid-column: 1 / 3; 
 }
   
 .intro-text p {
@@ -182,7 +185,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     background-color: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center; /* Mengatur posisi vertikal menjadi sejajar */
+    align-items: center;
 }
 
 .container  {
@@ -202,6 +205,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     text-align: center;
     font-family: 'Lato', sans-serif;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 .next-button a {
@@ -275,7 +279,13 @@ button, .navbar-menu a, input[type="text"], textarea {
     color: blue;
     font-weight: bold;
   }
-  
+
+
+.card-item .detail-link {
+    margin-bottom: 10px;
+}
+
+
 /* CSS Grid for recommendation cards */
 .rekom-card {
     display: grid;
@@ -300,10 +310,11 @@ button, .navbar-menu a, input[type="text"], textarea {
 }
 
 .rekom-card .card-item p {
-    color: #000; /* Change this to any color you want */
+    color: #000; 
     margin-top: 0px;
     text-align: justify;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .detail-link {
@@ -329,18 +340,18 @@ button, .navbar-menu a, input[type="text"], textarea {
     background-color: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center; /* Mengatur posisi vertikal menjadi sejajar */
-    margin: 0 auto; /* Center the container horizontally */
+    align-items: center; 
+    margin: 0 auto; 
   }
   
   .cultural-detail {
-    display: contents; /* This allows the items inside to align with the grid of the parent */
+    display: contents; 
   }
   .cultural-detail img {
-    width: 80%; /* Mengurangi lebar gambar menjadi 80% dari lebar parent */
-    height: 50%; /* Mengatur tinggi gambar menjadi setengah dari tinggi parent */
+    width: 80%;
+    height: 50%; 
     grid-column: span 1;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; 
     border-radius: 10px;
   }
   
@@ -353,7 +364,7 @@ button, .navbar-menu a, input[type="text"], textarea {
   }
   
   .detail-content {
-    grid-column: span 1; /* Make the content span 1 column */
+    grid-column: span 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,12 +380,12 @@ button, .navbar-menu a, input[type="text"], textarea {
   }
   
   .detail-content p {
-    color: #000; /* Change this to any color you want */
-    text-align: justify; /* This will justify the text */
+    color: #000; 
+    text-align: justify; 
     font-size: 20px;
     font-weight: 500;
     width: 80%;
-    margin: 0 auto; /* Center the paragraph horizontally */
+    margin: 0 auto; 
     margin-bottom: 20px;
   }
   
@@ -401,41 +412,41 @@ button, .navbar-menu a, input[type="text"], textarea {
 }
 
 .team-group {
-    display: grid; /* Menggunakan display grid */
-    grid-template-columns: repeat(3, 1fr); /* Membuat grid dengan 3 kolom */
-    gap: 20px; /* Memberikan jarak antar kolom dalam grid */
-    width: 90%; /* Menyesuaikan lebar kontainer */
-    margin: 0 auto; /* Menengahkan kontainer secara horizontal */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 90%; 
+    margin: 0 auto;
     padding: 20px;
 }
 
 .group {
     display: flex;
-    flex-direction: column; /* Mengatur arah layout vertikal */
-    align-items: center; /* Menengahkan konten dalam kolom */
+    flex-direction: column; 
+    align-items: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Untuk menjaga gambar dalam batasan frame */
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .group:hover {
-    transform: scale(1.05); /* Sedikit memperbesar frame saat di-hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.2); /* Menambah bayangan saat di-hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.2); 
 }
 
 .photo-frame {
-    width: 100%; /* Mengisi seluruh lebar kolom grid */
-    padding-top: 100%; /* Membuat rasio aspek 1:1 (persegi) */
+    width: 100%; 
+    padding-top: 100%; 
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 15px; /* Memberikan jarak antara foto dan deskripsi */
+    margin-bottom: 15px; 
     box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan pada bagian bawah */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi halus untuk hover */
+        0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .photo-frame::before {
@@ -445,9 +456,9 @@ button, .navbar-menu a, input[type="text"], textarea {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border: 10px solid rgba(192, 192, 192, 0.2); /* Garis abu di luar frame */
+    border: 10px solid rgba(192, 192, 192, 0.2); 
     border-radius: 10px;
-    z-index: -1; /* Menempatkan pseudo-element di lapisan belakang */
+    z-index: -1;
 }
 
 .photo-image {
@@ -456,14 +467,14 @@ button, .navbar-menu a, input[type="text"], textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Memastikan gambar memenuhi frame tanpa terdistorsi */
-    z-index: 0; /* Menempatkan gambar di lapisan depan */
-    transition: transform 0.3s ease; /* Animasi halus untuk hover */
+    object-fit: cover; 
+    z-index: 0;
+    transition: transform 0.3s ease; 
 }
 
 
 .photo-frame:hover .photo-image {
-    transform: scale(1.1); /* Efek zoom saat di-hover */
+    transform: scale(1.1); 
 }
 
 .description {
@@ -479,9 +490,9 @@ button, .navbar-menu a, input[type="text"], textarea {
 .description p {
     margin: 0;
     font-size: 20px;
-    margin-bottom: 10px; /* Menambahkan jarak antara deskripsi dan garis pembatas */
-    border-bottom: 3px solid #ccc; /* Menambahkan garis pembatas */
-    padding-bottom: 10px; /* Menambahkan ruang di bawah garis pembatas */
+    margin-bottom: 10px; 
+    border-bottom: 3px solid #ccc; 
+    padding-bottom: 10px; 
 }
 
 .team-container {
@@ -491,8 +502,8 @@ button, .navbar-menu a, input[type="text"], textarea {
     background-color: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center; /* Mengatur posisi vertikal menjadi sejajar */
-    margin: 0 auto; /* Center the container horizontally */
+    align-items: center;
+    margin: 0 auto; 
 }
 
 .team-container h2 {
@@ -505,28 +516,63 @@ button, .navbar-menu a, input[type="text"], textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Jarak antara ikon */
-    overflow: hidden; /* Menyembunyikan bagian yang tidak terpotong */
+    gap: 10px; 
+    overflow: hidden; 
 }
 
 .social-links a {
-    display: block; /* Untuk memastikan tautan mengambil ruang yang cukup */
-    width: 30px; /* Lebar ikon */
-    height: 30px; /* Tinggi ikon */
+    display: block; 
+    width: 30px; 
+    height: 30px;
 }
 
 .social-links img {
-    width: 100%; /* Agar gambar ikon mengisi ruang di dalam tautan */
-    height: 100%; /* Agar gambar ikon mengisi ruang di dalam tautan */
-    object-fit: cover; /* Untuk memastikan gambar ikon terlihat proporsional */
-    border-radius: 100%; /* Untuk memberikan sudut ikon bulat */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 100%; 
 }
 
 
 .social-links a:hover img {
-    transform: scale(1.05); /* Sedikit memperbesar frame saat di-hover */
-    filter: brightness(1.2); /* Meningkatkan kecerahan saat dihover */
-    transition: filter 0.3s ease; /* Menambahkan efek transisi */
+    transform: scale(1.05); 
+    filter: brightness(1.2); 
+    transition: filter 0.3s ease; 
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 1000; 
+}
+
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
 }
 
 /* Gaya untuk footer */

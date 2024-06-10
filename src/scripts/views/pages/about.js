@@ -1,12 +1,11 @@
 const About = {
-    async render() {
-        // Create HTML for the About section
-        return `
+  async render() {
+    return `
             <div id="about">
                 <div class="team-container">
                     <h2>Our Team</h2>
                     <div class="team-group">
-                        ${this.groups.map(group => `
+                        ${this.groups.map((group) => `
                             <div class="group">
                                 <div class="photo-frame">
                                     <img class="photo-image" src="${group.photo}" alt="${group.title}">
@@ -29,35 +28,35 @@ const About = {
                 </div>
             </div>
         `;
-    },
+  },
 
-    async afterRender() {
-        // Function to be called after the render method
-    },
+  async afterRender() {
+    // Function to be called after the render method
+  },
 
-    groups: [
-        {
-            title: "Yeshinta Mira Yolanda",
-            description: "Front-End Developer",
-            photo: "../images/foto-kelompok/foto-yeshinta.jpg",
-            linkedin: "https://www.linkedin.com/in/yeshinta-mira-yolanda-3840871b1/",
-            github: "https://github.com/yeshintamira"
-        },
-        {
-            title: "Rendy Adhinata Kusuma",
-            description: "Front-End Developer",
-            photo: "../",
-            linkedin: "https://www.linkedin.com/in/rendyj/",
-            github: "https://github.com/rendyj"
-        },
-        {
-            title: "Dwi Wahyu Kuncoro Hadi S.",
-            description: "Back-End Developer",
-            photo: "../images/",
-            linkedin: "https://www.linkedin.com/in/dwi/",
-            github: "https://github.com/dwi"
-        }
-    ]
+  groups: [
+    {
+      title: 'Yeshinta Mira Yolanda',
+      description: 'Front-End Developer',
+      photo: '../images/foto-kelompok/foto-yeshinta.jpg',
+      linkedin: 'https://www.linkedin.com/in/yeshinta-mira-yolanda-3840871b1/',
+      github: 'https://github.com/yeshintamira',
+    },
+    {
+      title: 'Dwi Wahyu Kuncoro Hadi S.',
+      description: 'Back-End Developer',
+      photo: '../images/',
+      linkedin: 'https://www.linkedin.com/in/dwi/',
+      github: 'https://github.com/dwi',
+    },
+    {
+      title: 'Rendy Adhinata Kusuma',
+      description: 'Front-End Developer',
+      photo: '../',
+      linkedin: 'https://www.linkedin.com/in/rendyj/',
+      github: 'https://github.com/rendyj',
+    },
+  ],
 };
 
 export default About;
