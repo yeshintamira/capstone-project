@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-param-reassign */
 import budaya from '../../data/budaya-source';
 
 const Home = {

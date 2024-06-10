@@ -41,15 +41,6 @@ html, body {
     padding: 20px 10px; 
     font-size: 16px;
 }
-
-.logo {
-    width: 70px;
-    height: 70px;
-    background-image: url('../public/images/logo-budra.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
   
 .navbar-menu {
     list-style: none;
@@ -70,6 +61,15 @@ html, body {
 
 .navbar-menu a:hover {
     color: #c7c7c7;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    background-image: url('../public/images/logo-budra.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Gaya untuk menu icon */
@@ -269,22 +269,33 @@ button, .navbar-menu a, input[type="text"], textarea {
     font-weight: 500;
   }
   
-  .detail-link {
+  .card-item .detail-link {
+    color: white;
     text-decoration: none;
-    color: blue;
-    font-weight: bold;
-  }
-    .detail-link {
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
-  }
-
-
-.card-item .detail-link {
     margin-bottom: 10px;
 }
 
+.card-item .detail-link:hover {
+    text-decoration: underline;
+}
+
+.card-item:hover {
+    transition: background-color 0.3s ease; /* Animasi perubahan warna background */
+}
+
+.card-content .detail-link {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.card-content .detail-link:hover {
+    text-decoration: underline;
+}
+
+.card-c.card-content {
+    transition: background-color 0.3s ease;
+}
 
 /* CSS Grid for recommendation cards */
 .rekom-card {
@@ -329,9 +340,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     transition: background-color 0.3s;
 }
   
-.detail-link:hover {
-    background-color: #1a6769;
-}
+
 
 .detail-container {
    width: 90%;
@@ -508,7 +517,8 @@ button, .navbar-menu a, input[type="text"], textarea {
 
 .team-container h2 {
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: #218284;
 }
 
@@ -574,6 +584,42 @@ button, .navbar-menu a, input[type="text"], textarea {
     font-size: 18px;
     color: #333;
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+
+  }
+  
+  #search-input {
+    width: 800px;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-right: 8px;
+    box-shadow: 0 0 0 2px #218284; 
+    font-family: 'Lato', sans-serif;
+    outline: none; 
+    font-weight: 500;
+  }
+  
+  
+  #search-button {
+    padding: 8px 16px;
+    background-color: #218284;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #search-button:hover {
+    background-color: #13565f; 
+  transition: background-color 0.3s ease; 
+  }
+  
 
 /* Gaya untuk footer */
 footer {

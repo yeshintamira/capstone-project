@@ -45,16 +45,16 @@ const About = {
     {
       title: 'Dwi Wahyu Kuncoro Hadi S.',
       description: 'Back-End Developer',
-      photo: '../images/',
-      linkedin: 'https://www.linkedin.com/in/dwi/',
-      github: 'https://github.com/dwi',
+      photo: '../images/foto-kelompok/foto-dwi.jpg',
+      linkedin: 'https://www.linkedin.com/in/dwi-wahyu-kuncoro-h-s-576088221/',
+      github: 'https://github.com/dwxonly',
     },
     {
       title: 'Rendy Adhinata Kusuma',
       description: 'Front-End Developer',
-      photo: '../',
-      linkedin: 'https://www.linkedin.com/in/rendyj/',
-      github: 'https://github.com/rendyj',
+      photo: '../images/foto-kelompok/foto-rendy.jpg',
+      linkedin: 'http://www.linkedin.com/in/rendy-adhinata-kusuma-647b56220',
+      github: 'https://github.com/RendyAdhinata',
     },
   ],
 };
