@@ -8,27 +8,26 @@ const Detail = {
 
     if (!culturalItem) {
       return `
-        <main class="detail-container" id="maincontent">
-          <p>Item tidak ditemukan!</p>
+        <main class="detail-container" id="maincontent" tabindex="0">
+          <p tabindex="0">Item tidak ditemukan!</p>
         </main>
       `;
     }
 
     return `
-      <main class="detail-container" id="maincontent">
-      <div class="cultural-detail">
-       <h2>${culturalItem.name}</h2>
-        <img src="${culturalItem.pictureId}" alt="${culturalItem.name}">
-        <div class="detail-content">
-         
-          <p>${culturalItem.description}</p>
-          ${culturalItem.ciriKhas ? `<h3>Ciri Khas</h3><p>${culturalItem.ciriKhas}</p>` : ''}
-          ${culturalItem.simbolis ? `<h3>Simbolis</h3><p>${culturalItem.simbolis}</p>` : ''}
-          ${culturalItem.fungsi ? `<h3>Fungsi</h3><p>${culturalItem.fungsi}</p>` : ''}
-          ${culturalItem.makna ? `<h3>Makna</h3><p>${culturalItem.makna}</p>` : ''}
+      <main class="detail-container" id="maincontent" tabindex="0">
+        <div class="cultural-detail">
+          <h2 tabindex="0">${culturalItem.name}</h2>
+          <img src="${culturalItem.pictureId}" alt="${culturalItem.name}" tabindex="0">
+          <div class="detail-content" tabindex="0">
+            <p tabindex="0">${culturalItem.description}</p>
+            ${culturalItem.ciriKhas ? `<h3 tabindex="0">Ciri Khas</h3><p tabindex="0">${culturalItem.ciriKhas}</p>` : ''}
+            ${culturalItem.simbolis ? `<h3 tabindex="0">Simbolis</h3><p tabindex="0">${culturalItem.simbolis}</p>` : ''}
+            ${culturalItem.fungsi ? `<h3 tabindex="0">Fungsi</h3><p tabindex="0">${culturalItem.fungsi}</p>` : ''}
+            ${culturalItem.makna ? `<h3 tabindex="0">Makna</h3><p tabindex="0">${culturalItem.makna}</p>` : ''}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
     `;
   },
 

@@ -3,25 +3,25 @@ import budaya from '../../data/budaya-source';
 const Budayas = {
   async render() {
     const culturalItems = budaya.map((item) => `
-      <div class="cultural-card">
-        <img class="cultural-image" src="${item.pictureId}" alt="${item.name}">
-        <div class="card-content">
-          <h2>${item.name}</h2>
-          <p>${item.description.substring(0, 120)}...</p>
-          <a href="#/detail/${item.id}" class="detail-link">Lihat Detail</a>
+      <div class="cultural-card" tabindex="0">
+        <img class="cultural-image" src="${item.pictureId}" alt="${item.name}" tabindex="0">
+        <div class="card-content" tabindex="0">
+          <h2 tabindex="0">${item.name}</h2>
+          <p tabindex="0">${item.description.substring(0, 120)}...</p>
+          <a href="#/detail/${item.id}" class="detail-link" tabindex="0">Lihat Detail</a>
         </div>
       </div>
     `).join('');
 
     return `
-      <main>
+      <main tabindex="0">
         <!-- Tambahkan elemen input pencarian -->
-        <div class="search-container">
-          <input type="text" id="search-input" placeholder="Search...">
-          <button id="search-button">Search</button>
+        <div class="search-container" tabindex="0">
+          <input type="text" id="search-input" placeholder="Search..." tabindex="0">
+          <button id="search-button" tabindex="0">Search</button>
         </div>
         <!-- Daftar budaya -->
-        <div id="cultural-list" class="cultural-list">
+        <div id="cultural-list" class="cultural-list" tabindex="0">
           ${culturalItems}
         </div>
       </main>
@@ -56,19 +56,19 @@ const Budayas = {
 
     if (results.length > 0) {
       const culturalItems = results.map((item) => `
-        <div class="cultural-card">
-          <img class="cultural-image" src="${item.pictureId}" alt="${item.name}">
-          <div class="card-content">
-            <h2>${item.name}</h2>
-            <p>${item.description.substring(0, 120)}...</p>
-            <a href="#/detail/${item.id}" class="detail-link">Lihat Detail</a>
+        <div class="cultural-card" tabindex="0">
+          <img class="cultural-image" src="${item.pictureId}" alt="${item.name}" tabindex="0">
+          <div class="card-content" tabindex="0">
+            <h2 tabindex="0">${item.name}</h2>
+            <p tabindex="0">${item.description.substring(0, 120)}...</p>
+            <a href="#/detail/${item.id}" class="detail-link" tabindex="0">Lihat Detail</a>
           </div>
         </div>
       `).join('');
 
       culturalList.innerHTML = culturalItems;
     } else {
-      culturalList.innerHTML = '<p>No results found.</p>';
+      culturalList.innerHTML = '<p tabindex="0">Tidak ditemukan.</p>';
     }
   },
 };

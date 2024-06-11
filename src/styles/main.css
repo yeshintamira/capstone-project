@@ -64,8 +64,8 @@ html, body {
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background-image: url('../public/images/logo-budra.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,6 +81,10 @@ html, body {
     font-size: 24px;  
     cursor: pointer;  
     padding: 10px;  
+}
+
+.navbar-menu.open {
+    margin-top: 50px;
 }
 
 button, .navbar-menu a, input[type="text"], textarea {
@@ -555,37 +559,36 @@ button, .navbar-menu a, input[type="text"], textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
+    height: 100vh;
     width: 100%;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.8); 
-    z-index: 1000; 
-}
-
-
-.spinner {
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+  }
+  
+  .spinner {
     width: 50px;
     height: 50px;
     border: 8px solid rgba(0, 0, 0, 0.1);
-    border-top: 8px solid #3498db; 
+    border-top: 8px solid #3498db;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
+  }
+  
+  @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-.loading-text {
+  }
+  
+  .loading-text {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
-}
-
-.search-container {
+  }
+  
+  .search-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -620,6 +623,7 @@ button, .navbar-menu a, input[type="text"], textarea {
   transition: background-color 0.3s ease; 
   }
   
+
 
 /* Gaya untuk footer */
 footer {

@@ -1,9 +1,9 @@
 {
-    "id": "restaurantcatalogue-lite-pwa-1",
+    "id": "Budaya-Madura-pwa-1",
     "start_url": "./index.html",
-    "name": "Yeshinta's Restaurant Catalogue Lite",
-    "short_name": "Restaurant Lite",
-    "description": "Free Catalogue Restaurant for you",
+    "name": "Budaya Madura Lite",
+    "short_name": "Madura Lite",
+    "description": "Free Catalogue Budaya Madura for you",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#D84315",
