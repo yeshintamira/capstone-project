@@ -15,6 +15,7 @@
     }
     #drawer.open {
         display: flex;
+        margin-top: 12px;
     }
     #drawer li a {
         display: block;
@@ -48,9 +49,18 @@
 
 /* Medium screens */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .navbar-menu li {
-        padding: 0 10px;
+    .navbar-menu {
+        display: flex;
+        justify-content: center; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
     }
+    
+    .navbar-menu li {
+        padding: 0 10px; 
+    }
+    
     #cultural-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -69,8 +79,16 @@
 
 /* Large screens */
 @media only screen and (min-width: 1025px) {
+    .navbar-menu {
+        display: flex; 
+        justify-content: center; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    
     .navbar-menu li {
-        padding: 0 10px;
+        padding: 0 10px; 
     }
     #cultural-list {
         grid-template-columns: repeat(3, 1fr);
@@ -157,6 +175,9 @@
     .team-group {
         grid-template-columns: repeat(2, 1fr);
     }
+    .madura-image-container {
+        grid-column: 1 / -1; 
+    }
 }
 
 /* Large screens */
@@ -217,6 +238,15 @@
       width: 100%; 
       max-width: 1000px; 
       margin: 0 auto; 
+      margin-bottom: 15px;
+    }
+
+    .cultural-info  {
+        width: 95%;
+        margin-top: -10px; 
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
     }
   
     #search-input {
@@ -232,9 +262,20 @@
   
   @media only screen and (max-width: 767px) {
     .search-container {
-      width: 100%; 
+      width: 90%; 
       margin: 0 auto; 
     }
+
+    .cultural-info h2 {
+        font-size: 25px;
+        width: 95%;
+        margin: 0 auto; 
+        display: block;
+        margin-top: -10px; 
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
   
     #search-input {
       width: 100%; 
@@ -247,4 +288,28 @@
     }
   }
   
-  
+  /* Untuk layar dengan lebar kurang dari atau sama dengan 768px */
+@media only screen and (max-width: 768px) {
+    .donate-container {
+        width: 90%;
+    }
+
+    .donate-container h2 {
+        font-size: 30px; 
+    }
+
+    .donate-container p {
+        font-size: 20px; 
+    }
+
+    .qr-code img {
+        max-width: 70%; 
+    }
+}
+
+/* Untuk layar dengan lebar lebih dari 768px */
+@media only screen and (min-width: 769px) {
+    .donate-container {
+        width: 70%; 
+    }
+}

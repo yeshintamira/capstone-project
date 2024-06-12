@@ -16,5 +16,7 @@ module.exports = merge(common, {
       },
     },
     compress: true,
+    // Hapus atau komentari opsi hot
+    // hot: true,
   },
 });

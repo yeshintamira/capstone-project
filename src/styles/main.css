@@ -19,7 +19,7 @@ html, body {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #000;
+    background: rgba(33, 130, 132, 0.8);
     color: white;
     padding: 8px 16px;
     z-index: 100;
@@ -38,25 +38,27 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10px; 
+    padding: 5px 10px;
     font-size: 16px;
 }
+
   
 .navbar-menu {
+    display: flex; 
+    justify-content: center; 
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    padding: 0; 
 }
 
 .navbar-menu li {
-    padding: 0 10px;
+    padding: 0 15px; 
 }
+
 
 .navbar-menu a {
     text-decoration: none;
     color: white;
-    font-size: 16px; 
+    font-size: 25px; 
 }
 
 .navbar-menu a:hover {
@@ -188,9 +190,13 @@ button, .navbar-menu a, input[type="text"], textarea {
     border-radius: 10px;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 
+                0 8px 16px rgba(0, 0, 0, 0.1), 
+                0 12px 24px rgba(0, 0, 0, 0.1); 
     align-items: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
+
 
 .container  {
     font-family: Lato, sans-serif;
@@ -284,7 +290,7 @@ button, .navbar-menu a, input[type="text"], textarea {
 }
 
 .card-item:hover {
-    transition: background-color 0.3s ease; /* Animasi perubahan warna background */
+    transition: background-color 0.3s ease; 
 }
 
 .card-content .detail-link {
@@ -343,8 +349,6 @@ button, .navbar-menu a, input[type="text"], textarea {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
-  
-
 
 .detail-container {
    width: 90%;
@@ -355,11 +359,9 @@ button, .navbar-menu a, input[type="text"], textarea {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center; 
     margin: 0 auto; 
-  }
-  
-  .cultural-detail {
     display: contents; 
   }
+
   .cultural-detail img {
     width: 80%;
     height: 50%; 
@@ -428,7 +430,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
-    width: 90%; 
+    width: 95%; 
     margin: 0 auto;
     padding: 20px;
 }
@@ -514,9 +516,12 @@ button, .navbar-menu a, input[type="text"], textarea {
     border-radius: 10px;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 
+                0 8px 16px rgba(0, 0, 0, 0.1), 
+                0 12px 24px rgba(0, 0, 0, 0.1); 
     align-items: center;
-    margin: 0 auto; 
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease; 
 }
 
 .team-container h2 {
@@ -572,7 +577,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     width: 50px;
     height: 50px;
     border: 8px solid rgba(0, 0, 0, 0.1);
-    border-top: 8px solid #3498db;
+    border-top: 8px solid #218284;
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
@@ -593,7 +598,8 @@ button, .navbar-menu a, input[type="text"], textarea {
     align-items: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
-
+    margin-top: 30px;
+    margin-bottom: -10px;
   }
   
   #search-input {
@@ -607,7 +613,6 @@ button, .navbar-menu a, input[type="text"], textarea {
     outline: none; 
     font-weight: 500;
   }
-  
   
   #search-button {
     padding: 8px 16px;
@@ -623,8 +628,74 @@ button, .navbar-menu a, input[type="text"], textarea {
   transition: background-color 0.3s ease; 
   }
   
+.cultural-info h2 {
+    font-size: 30px;
+    color: #218284;
+    padding-bottom: 5px;
+    align-items: center;
+    margin-top: 5px;
+}
 
+#donate {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+}
 
+.donate-container {
+    width: 70%;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 
+                0 8px 16px rgba(0, 0, 0, 0.1), 
+                0 12px 24px rgba(0, 0, 0, 0.1); 
+   
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease; 
+}
+
+.donate-container h2{
+    font-size: 40px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    color: #218284;
+}
+
+.qr-code {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.qr-code img {
+    max-width: 40%; 
+    height: 40%; 
+    display: block; 
+    margin: 0 auto 10px; 
+    margin-top: -4px; 
+    border-radius: 8px; 
+    border: 2px solid #ccc; 
+}
+
+.qr-code p {
+    margin: 0; 
+    margin-top: 0px; 
+    margin-bottom: 10px; 
+    font-weight: 600;
+    align-items: left;
+    font-size: 20px;
+}
+
+.no-results {
+    font-size: 1.2em;
+    color: #218284; /* Warna teks merah */
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
 /* Gaya untuk footer */
 footer {
     background-color: #218284;

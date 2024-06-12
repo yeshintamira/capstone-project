@@ -2,23 +2,23 @@ const About = {
   async render() {
     return `
       <div id="about" tabindex="0">
-        <div class="team-container" tabindex="0">
+        <div class="team-container">
           <h2 tabindex="0">Our Team</h2>
-          <div class="team-group" tabindex="0">
-            ${this.groups.map((group, index) => `
-              <div class="group" tabindex="${index + 1}">
-                <div class="photo-frame" tabindex="0">
+          <div class="team-group">
+            ${this.groups.map((group) => `
+              <div class="group">
+                <div class="photo-frame">
                   <img class="photo-image" src="${group.photo}" alt="${group.title}" tabindex="0">
                 </div>
-                <div class="description" tabindex="0">
+                <div class="description">
                   <h3 tabindex="0">${group.title}</h3>
-                  <p tabindex="0">${group.description}</p>
-                  <div class="social-links" tabindex="0">
+                  <p>${group.description}</p>
+                  <div class="social-links">
                     <a href="${group.linkedin}" target="_blank" tabindex="0">
-                      <img src="../images/foto-sosial/linkedin.jpg" alt="LinkedIn" tabindex="0">
+                      <img src="../images/foto-sosial/linkedin.jpg" alt="LinkedIn">
                     </a>
                     <a href="${group.github}" target="_blank" tabindex="0">
-                      <img src="../images/foto-sosial/github.jpg" alt="Github" tabindex="0">
+                      <img src="../images/foto-sosial/github.jpg" alt="Github">
                     </a>
                   </div>
                 </div>
