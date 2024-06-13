@@ -688,6 +688,12 @@ button, .navbar-menu a, input[type="text"], textarea {
     font-size: 20px;
 }
 
+.qr-code h3 {
+    margin-top: -5px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
 .no-results {
     font-size: 1.2em;
     color: #218284; /* Warna teks merah */
