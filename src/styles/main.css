@@ -709,9 +709,11 @@ button, .navbar-menu a, input[type="text"], textarea {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    cursor: pointer;
     border-radius: 5px;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    display: inline-block;
     margin-bottom: 10px;/* Meletakkan di tengah dan memberikan margin atas 10px */
   }
   
