@@ -714,7 +714,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     text-align: center;
     font-family: 'Lato', sans-serif;
     display: inline-block;
-    margin-bottom: 10px;/* Meletakkan di tengah dan memberikan margin atas 10px */
+    margin-bottom: 10px;* Meletakkan di tengah dan memberikan margin atas 10px */
   }
   
   #submitReviewBtn:hover {
