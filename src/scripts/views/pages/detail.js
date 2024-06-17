@@ -27,12 +27,45 @@ const Detail = {
             ${culturalItem.makna ? `<h3 tabindex="0">Makna</h3><p tabindex="0">${culturalItem.makna}</p>` : ''}
           </div>
         </div>
+        <button id="addReviewBtn" tabindex="0">Add Review</button>
+        <div id="reviewForm" style="display:none;">
+          <h2>Tambahkan Review untuk Artikel ${culturalItem.name}</h2>
+          <form id="reviewFormElement">
+            <textarea id="reviewText" placeholder="Write your review here..." tabindex="0"></textarea>
+            <button type="button" id="submitReviewBtn" tabindex="0">Submit</button>
+          </form>
+        </div>
       </main>
     `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    document.getElementById('addReviewBtn').addEventListener('click', () => {
+      document.getElementById('reviewForm').style.display = 'block';
+    });
+
+    document.getElementById('submitReviewBtn').addEventListener('click', async () => {
+      const reviewText = document.getElementById('reviewText').value;
+      if (reviewText) {
+        const response = await fetch('http://localhost:3000/api/reviews', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ review: reviewText }), // Kirim hanya ulasan
+        });
+
+        if (response.ok) {
+          alert('Review submitted successfully!');
+          document.getElementById('reviewText').value = '';
+          document.getElementById('reviewForm').style.display = 'none';
+        } else {
+          alert('Failed to submit review. Please try again.');
+        }
+      } else {
+        alert('Review cannot be empty.');
+      }
+    });
   },
 };
 
