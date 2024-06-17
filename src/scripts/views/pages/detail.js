@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import budaya from '../../data/budaya-source';
+import supabase from '../../routes/supabase';
 
 const Detail = {
   async render() {
@@ -30,10 +31,9 @@ const Detail = {
         <div id="reviewForm" style="display:none;">
           <h2>Tambahkan Review untuk Artikel ${culturalItem.name}</h2>
           <form id="reviewFormElement">
-            <!-- Menggunakan culturalItem.name sebagai nilai judul dan menambahkan atribut readonly -->
             <input type="text" id="reviewTitle" placeholder="Title" value="${culturalItem.name}" tabindex="0" readonly>
             <textarea id="reviewText" placeholder="Write your review here..." tabindex="0"></textarea>
-            <button type="button" id="submitReviewBtn" tabindex="0">Submit</button>
+            <button type="submit" id="submitReviewBtn" tabindex="0">Submit</button>
           </form>
         </div>
       </main>
@@ -45,27 +45,22 @@ const Detail = {
     document.getElementById('addReviewBtn').addEventListener('click', () => {
       document.getElementById('reviewForm').style.display = 'block';
     });
-
     document.getElementById('submitReviewBtn').addEventListener('click', async () => {
       const reviewTitle = document.getElementById('reviewTitle').value;
       const reviewText = document.getElementById('reviewText').value;
       if (reviewTitle && reviewText) {
         try {
-          const response = await fetch('http://localhost:3005/api/reviews', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ title: reviewTitle, review: reviewText }), // Kirim judul dan ulasan
-          });
-
-          if (response.ok) {
+          const { data, error } = await supabase
+            .from('reviews')
+            .insert([{ title: reviewTitle, review: reviewText }]);
+          
+          if (error) {
+            throw new Error('Failed to submit review.');
+          } else {
             alert('Review submitted successfully!');
             document.getElementById('reviewTitle').value = '';
             document.getElementById('reviewText').value = '';
             document.getElementById('reviewForm').style.display = 'none';
-          } else {
-            throw new Error('Failed to submit review.');
           }
         } catch (error) {
           console.error(error);
@@ -77,5 +72,4 @@ const Detail = {
     });
   },
 };
-
 export default Detail;
