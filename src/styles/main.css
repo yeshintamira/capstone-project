@@ -703,7 +703,7 @@ button, .navbar-menu a, input[type="text"], textarea {
   }
  
   #submitReviewBtn {
-    background-color: #842121;
+    background-color: #218284;
     width: 80%;
     color: white;
     border: none;
@@ -764,19 +764,37 @@ button, .navbar-menu a, input[type="text"], textarea {
     color: #218284; /* Warna teks sesuaikan */
     margin-bottom: 15px;
   }
+
+  #reviewTitle {
+    width: 80%;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #218284;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    resize: vertical; 
+    transition: border-color 0.3s ease;
+    margin: 0 auto; 
+    margin-bottom: 15px;
+    background-color: #d8d8d8; 
+    display: flex; 
+    align-items: center;
+  }
   
   #reviewText {
     width: 80%;
     height: 100px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #218284;
     border-radius: 5px;
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-family: Lato, sans-serif;
     resize: vertical; /* Memungkinkan untuk merubah ukuran vertikal */
     transition: border-color 0.3s ease;
     margin: 0 auto; /* Meletakkan di tengah */
     margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
   }
   
   #reviewText:focus {

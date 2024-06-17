@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import budaya from '../../data/budaya-source';
 
 const Detail = {
@@ -5,7 +6,6 @@ const Detail = {
     const url = window.location.hash.split('/');
     const id = url[url.length - 1];
     const culturalItem = budaya.find((item) => item.id === id);
-
     if (!culturalItem) {
       return `
         <main class="detail-container" id="maincontent" tabindex="0">
@@ -13,7 +13,6 @@ const Detail = {
         </main>
       `;
     }
-
     return `
       <main class="detail-container" id="maincontent" tabindex="0">
         <div class="cultural-detail">
@@ -31,8 +30,10 @@ const Detail = {
         <div id="reviewForm" style="display:none;">
           <h2>Tambahkan Review untuk Artikel ${culturalItem.name}</h2>
           <form id="reviewFormElement">
+            <!-- Menggunakan culturalItem.name sebagai nilai judul dan menambahkan atribut readonly -->
+            <input type="text" id="reviewTitle" placeholder="Title" value="${culturalItem.name}" tabindex="0" readonly>
             <textarea id="reviewText" placeholder="Write your review here..." tabindex="0"></textarea>
-            <button type="submit" id="submitReviewBtn" tabindex="0">Submit</button>
+            <button type="button" id="submitReviewBtn" tabindex="0">Submit</button>
           </form>
         </div>
       </main>
@@ -40,50 +41,41 @@ const Detail = {
   },
 
   async afterRender() {
+    // Fungsi ini akan dipanggil setelah render()
     document.getElementById('addReviewBtn').addEventListener('click', () => {
       document.getElementById('reviewForm').style.display = 'block';
     });
-  
-    // Menangani klik tombol submit
-    document.getElementById('submitReviewBtn').addEventListener('click', this.submitReview);
-  
-    // Menangani sentuhan pada tombol submit
-    document.getElementById('submitReviewBtn').addEventListener('touchend', this.submitReview);
-  
-    // Menangani submit formulir
+
     document.getElementById('submitReviewBtn').addEventListener('click', async () => {
-      // Mendapatkan nilai ulasan dari textarea
+      const reviewTitle = document.getElementById('reviewTitle').value;
       const reviewText = document.getElementById('reviewText').value;
-      
-      // Lakukan pengecekan jika ulasan tidak kosong
-      if (reviewText) {
+      if (reviewTitle && reviewText) {
         try {
-          // Lakukan permintaan POST ke server
-          const response = await fetch('http://localhost:3000/api/reviews', {
+          const response = await fetch('http://localhost:3005/api/reviews', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ review: reviewText }),
+            body: JSON.stringify({ title: reviewTitle, review: reviewText }), // Kirim judul dan ulasan
           });
-    
-          // Periksa apakah permintaan berhasil
+
           if (response.ok) {
             alert('Review submitted successfully!');
+            document.getElementById('reviewTitle').value = '';
             document.getElementById('reviewText').value = '';
             document.getElementById('reviewForm').style.display = 'none';
           } else {
-            alert('Failed to submit review. Please try again.');
+            throw new Error('Failed to submit review.');
           }
         } catch (error) {
-          console.error('Error:', error);
+          console.error(error);
           alert('Failed to submit review. Please try again.');
         }
       } else {
-        alert('Review cannot be empty.');
+        alert('Title and review cannot be empty.');
       }
-    });    
-  },  
+    });
+  },
 };
 
 export default Detail;
