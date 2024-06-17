@@ -43,11 +43,17 @@ const Detail = {
     document.getElementById('addReviewBtn').addEventListener('click', () => {
       document.getElementById('reviewForm').style.display = 'block';
     });
-
+  
+    // Menangani klik tombol submit
+    document.getElementById('submitReviewBtn').addEventListener('click', this.submitReview);
+  
+    // Menangani sentuhan pada tombol submit
+    document.getElementById('submitReviewBtn').addEventListener('touchend', this.submitReview);
+  
     // Menangani submit formulir
     document.getElementById('reviewFormElement').addEventListener('submit', async (event) => {
       event.preventDefault(); // Mencegah pengiriman formulir bawaan browser
-
+  
       const reviewText = document.getElementById('reviewText').value;
       if (reviewText) {
         const response = await fetch('http://localhost:3000/api/reviews', {
@@ -57,7 +63,7 @@ const Detail = {
           },
           body: JSON.stringify({ review: reviewText }), // Kirim hanya ulasan
         });
-
+  
         if (response.ok) {
           alert('Review submitted successfully!');
           document.getElementById('reviewText').value = '';
@@ -66,10 +72,10 @@ const Detail = {
           alert('Gagal mengirim ulasan. Silakan coba lagi.');
         }
       } else {
-      alert('Failed to submit review. Please try again.');
+        alert('Failed to submit review. Please try again.');
       }
     });
-  },
+  },  
 };
 
 export default Detail;
