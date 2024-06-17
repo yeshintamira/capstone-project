@@ -713,16 +713,13 @@ button, .navbar-menu a, input[type="text"], textarea {
     text-align: center;
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
-    margin: 0 auto;
-}
-
-#submitReviewBtn:hover {
+    margin: 0 auto; /* Meletakkan di tengah */
+  }
+  
+  #submitReviewBtn:hover {
     background-color: #1a6666;
     text-decoration: underline;
-}
-
-  
-  
+  }
   
   #addReviewBtn {
     background-color: #218284;
@@ -744,7 +741,6 @@ button, .navbar-menu a, input[type="text"], textarea {
     text-decoration: underline;
   }
   
-  
   #reviewForm {
     width: 80%;
     gap: 20px;
@@ -755,7 +751,7 @@ button, .navbar-menu a, input[type="text"], textarea {
                 0 8px 16px rgba(0, 0, 0, 0.1), 
                 0 12px 24px rgba(0, 0, 0, 0.1); 
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto; /* Meletakkan di tengah */
     transition: box-shadow 0.3s ease; 
     margin-top: 10px;
   }
@@ -767,7 +763,6 @@ button, .navbar-menu a, input[type="text"], textarea {
     margin-bottom: 15px;
   }
   
-
   #reviewText {
     width: 80%;
     height: 100px;
@@ -790,6 +785,7 @@ button, .navbar-menu a, input[type="text"], textarea {
   #reviewText::placeholder {
     color: #999; /* Warna placeholder */
   }
+  
   
 /* Gaya untuk footer */
 footer {
