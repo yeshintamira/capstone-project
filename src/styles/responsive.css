@@ -320,15 +320,4 @@
       font-size: 24px; /* Ukuran font lebih kecil pada layar kecil */
       margin-bottom: 15px; /* Margin bawah lebih kecil pada layar kecil */
     }
-
-    /* Tambahkan aturan CSS untuk responsifitas */
-@media screen and (max-width: 768px) {
-    /* Ganti tata letak tombol dan formulir */
-    #submitReviewBtn,
-    #reviewFormElement {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
-  
   }
