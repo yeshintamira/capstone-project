@@ -701,8 +701,27 @@ button, .navbar-menu a, input[type="text"], textarea {
     margin-top: 10px;
     font-weight: bold;
   }
+  #submitReviewBtn {
+    background-color: #218284;
+    width: 80%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
   
-  #submitReviewBtn, #addReviewBtn {
+  #submitReviewBtn:hover {
+    background-color: #1a6666;
+    text-decoration: underline;
+  }
+  
+  
+  #addReviewBtn {
     background-color: #218284;
     width: 80%;
     color: white;
@@ -717,15 +736,11 @@ button, .navbar-menu a, input[type="text"], textarea {
     margin-bottom: 10px;
   }
   
-  #submitReviewBtn a, #addReviewBtn a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  #submitReviewBtn:hover, #addReviewBtn:hover {
+  #addReviewBtn:hover {
     background-color: #1a6666;
     text-decoration: underline;
   }
+  
   
   #reviewForm {
     width: 80%;
