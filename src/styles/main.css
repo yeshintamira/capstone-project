@@ -712,7 +712,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     border-radius: 5px;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    margin: 10px auto 0; /* Meletakkan di tengah dan memberikan margin atas 10px */
+    margin-bottom: 10px;/* Meletakkan di tengah dan memberikan margin atas 10px */
   }
   
   #submitReviewBtn:hover {
