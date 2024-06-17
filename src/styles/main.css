@@ -701,6 +701,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     margin-top: 10px;
     font-weight: bold;
   }
+ 
   #submitReviewBtn {
     background-color: #218284;
     width: 80%;
@@ -711,14 +712,15 @@ button, .navbar-menu a, input[type="text"], textarea {
     border-radius: 5px;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    margin-bottom: 10px; /* Hapus display: inline-block; */
+    margin-bottom: 10px;
     margin: 0 auto;
-  }
-  
-  #submitReviewBtn:hover {
+}
+
+#submitReviewBtn:hover {
     background-color: #1a6666;
     text-decoration: underline;
-  }
+}
+
   
   
   
