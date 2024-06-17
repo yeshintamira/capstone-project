@@ -712,14 +712,13 @@ button, .navbar-menu a, input[type="text"], textarea {
     border-radius: 5px;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    margin-bottom: 10px;
-    margin: 0 auto; /* Meletakkan di tengah */
+    margin: 10px auto 0; /* Meletakkan di tengah dan memberikan margin atas 10px */
   }
   
   #submitReviewBtn:hover {
     background-color: #1a6666;
     text-decoration: underline;
-  }
+  }  
   
   #addReviewBtn {
     background-color: #218284;
