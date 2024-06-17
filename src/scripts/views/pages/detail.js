@@ -27,12 +27,12 @@ const Detail = {
             ${culturalItem.makna ? `<h3 tabindex="0">Makna</h3><p tabindex="0">${culturalItem.makna}</p>` : ''}
           </div>
         </div>
-        <button id="addReviewBtn" class="submit-button" tabindex="0">Add Review</button>
+        <button id="addReviewBtn" tabindex="0">Add Review</button>
         <div id="reviewForm" style="display:none;">
           <h2>Tambahkan Review untuk Artikel ${culturalItem.name}</h2>
           <form id="reviewFormElement">
             <textarea id="reviewText" placeholder="Write your review here..." tabindex="0"></textarea>
-            <button type="submit" id="submitReviewBtn" class="submit-button" tabindex="0">Submit</button>
+            <button type="submit" id="submitReviewBtn" tabindex="0">Submit</button>
           </form>
         </div>
       </main>
@@ -43,39 +43,47 @@ const Detail = {
     document.getElementById('addReviewBtn').addEventListener('click', () => {
       document.getElementById('reviewForm').style.display = 'block';
     });
-
+  
     // Menangani klik tombol submit
     document.getElementById('submitReviewBtn').addEventListener('click', this.submitReview);
-
+  
     // Menangani sentuhan pada tombol submit
     document.getElementById('submitReviewBtn').addEventListener('touchend', this.submitReview);
-
+  
     // Menangani submit formulir
-    document.getElementById('reviewFormElement').addEventListener('submit', async (event) => {
-      event.preventDefault(); // Mencegah pengiriman formulir bawaan browser
-
+    document.getElementById('submitReviewBtn').addEventListener('click', async () => {
+      // Mendapatkan nilai ulasan dari textarea
       const reviewText = document.getElementById('reviewText').value;
+      
+      // Lakukan pengecekan jika ulasan tidak kosong
       if (reviewText) {
-        const response = await fetch('http://localhost:3000/api/reviews', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ review: reviewText }), // Kirim hanya ulasan
-        });
-
-        if (response.ok) {
-          alert('Review submitted successfully!');
-          document.getElementById('reviewText').value = '';
-          document.getElementById('reviewForm').style.display = 'none';
-        } else {
-          alert('Gagal mengirim ulasan. Silakan coba lagi.');
+        try {
+          // Lakukan permintaan POST ke server
+          const response = await fetch('http://localhost:3000/api/reviews', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ review: reviewText }),
+          });
+    
+          // Periksa apakah permintaan berhasil
+          if (response.ok) {
+            alert('Review submitted successfully!');
+            document.getElementById('reviewText').value = '';
+            document.getElementById('reviewForm').style.display = 'none';
+          } else {
+            alert('Failed to submit review. Please try again.');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          alert('Failed to submit review. Please try again.');
         }
       } else {
-        alert('Failed to submit review. Please try again.');
+        alert('Review cannot be empty.');
       }
-    });
-  },
+    });    
+  },  
 };
 
 export default Detail;
