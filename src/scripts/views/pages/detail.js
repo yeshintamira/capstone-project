@@ -50,10 +50,11 @@ const Detail = {
       const reviewText = document.getElementById('reviewText').value;
       if (reviewTitle && reviewText) {
         try {
+          // eslint-disable-next-line no-unused-vars
           const { data, error } = await supabase
             .from('reviews')
             .insert([{ title: reviewTitle, review: reviewText }]);
-          
+
           if (error) {
             throw new Error('Failed to submit review.');
           } else {

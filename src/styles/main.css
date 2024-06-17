@@ -696,7 +696,7 @@ button, .navbar-menu a, input[type="text"], textarea {
 
 .no-results {
     font-size: 1.2em;
-    color: #218284; /* Warna teks merah */
+    color: #218284; 
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
@@ -753,7 +753,7 @@ button, .navbar-menu a, input[type="text"], textarea {
                 0 8px 16px rgba(0, 0, 0, 0.1), 
                 0 12px 24px rgba(0, 0, 0, 0.1); 
     align-items: center;
-    margin: 0 auto; /* Meletakkan di tengah */
+    margin: 0 auto; 
     transition: box-shadow 0.3s ease; 
     margin-top: 10px;
   }
@@ -761,7 +761,7 @@ button, .navbar-menu a, input[type="text"], textarea {
   #reviewForm h2 {
     margin-top: -5px;
     font-size: 35px;
-    color: #218284; /* Warna teks sesuaikan */
+    color: #218284; 
     margin-bottom: 15px;
   }
 
@@ -790,20 +790,20 @@ button, .navbar-menu a, input[type="text"], textarea {
     border-radius: 5px;
     font-size: 16px;
     font-family: Lato, sans-serif;
-    resize: vertical; /* Memungkinkan untuk merubah ukuran vertikal */
+    resize: vertical; 
     transition: border-color 0.3s ease;
-    margin: 0 auto; /* Meletakkan di tengah */
+    margin: 0 auto; 
     margin-bottom: 15px;
     font-family: 'Lato', sans-serif;
   }
   
   #reviewText:focus {
     outline: none;
-    border-color: #218284; /* Warna border saat fokus */
+    border-color: #218284; 
   }
   
   #reviewText::placeholder {
-    color: #999; /* Warna placeholder */
+    color: #999; 
   }
   
   

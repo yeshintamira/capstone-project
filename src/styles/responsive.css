@@ -317,7 +317,7 @@
 /* Responsivitas */
 @media screen and (max-width: 768px) {
     #reviewForm h2 {
-      font-size: 24px; /* Ukuran font lebih kecil pada layar kecil */
-      margin-bottom: 15px; /* Margin bawah lebih kecil pada layar kecil */
+      font-size: 24px; 
+      margin-bottom: 15px; 
     }
   }
