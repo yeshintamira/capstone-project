@@ -32,7 +32,7 @@ const Detail = {
           <h2>Tambahkan Review untuk Artikel ${culturalItem.name}</h2>
           <form id="reviewFormElement">
             <textarea id="reviewText" placeholder="Write your review here..." tabindex="0"></textarea>
-            <button type="button" id="submitReviewBtn" tabindex="0">Submit</button>
+            <button type="submit" id="submitReviewBtn" tabindex="0">Submit</button>
           </form>
         </div>
       </main>
@@ -44,7 +44,10 @@ const Detail = {
       document.getElementById('reviewForm').style.display = 'block';
     });
 
-    document.getElementById('submitReviewBtn').addEventListener('click', async () => {
+    // Menangani submit formulir
+    document.getElementById('reviewFormElement').addEventListener('submit', async (event) => {
+      event.preventDefault(); // Mencegah pengiriman formulir bawaan browser
+
       const reviewText = document.getElementById('reviewText').value;
       if (reviewText) {
         const response = await fetch('http://localhost:3000/api/reviews', {
@@ -60,10 +63,10 @@ const Detail = {
           document.getElementById('reviewText').value = '';
           document.getElementById('reviewForm').style.display = 'none';
         } else {
-          alert('Failed to submit review. Please try again.');
+          alert('Gagal mengirim ulasan. Silakan coba lagi.');
         }
       } else {
-        alert('Review cannot be empty.');
+      alert('Failed to submit review. Please try again.');
       }
     });
   },
