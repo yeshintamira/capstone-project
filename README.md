@@ -14,10 +14,10 @@ Kami memilih konsep Budra karena digitalisasi adalah kunci untuk menjaga dan mem
 3. Melakukan instalasi node modules dengan npm install
 4. Memperbarui folder dist dengan npm run build
 
-## Menjalankan program
+## Menjalankan Program
 1. Jalankan dengan npm run start--dev
 2. Program akan berjalan di localhost:9004
 
-## Alamat deploy
+## Alamat Deploy
 https://budra-apps.vercel.app/
 
